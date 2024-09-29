@@ -21,7 +21,7 @@ $('#send-btn').on('click' , ()=>{
 socket.on('received-msg' , (data)=>{
     console.log(data);
     //adding the element li and chat data inside the html
-    $('#chat').append(`<li class="border mt-2 mb-2 p-2 rounded-pill"> <strong class="fw-bold">${data.username}:</strong> ->${data.msg}</li>`)
+    $('#chat').append(`<li class="border mt-2 mb-2 p-2 rounded-pill bg-light"> <strong class="fw-bold">${data.username}:</strong> ->${data.msg}</li>`)
 })
 
 $('#login-btn').on('click' , ()=>{
